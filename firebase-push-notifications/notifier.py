@@ -1,11 +1,16 @@
+'''
+Module string
+'''
+
 import requests
 from models import User
 from sqlalchemy import create_engine, orm
 
 fcm_url = "https://fcm.googleapis.com/fcm/send"
+fcm_url = "https://fcm.googleapis.com/fcm/send"
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "key=your-server-api-key-goes-here"
+    "Authorization": "key=AAAAH8XAtB8:APA91bF77aujd6-XWzfsdwrBR7aIwpla2QmU1MtirzBgLyUm_n7NHtL_wp5p3kPpxQe8ZCN8FsyPAdTCgSyR8KVW8yKZJJ65KhbzU3gFI5UjxIjpFMa74d_NTIfiG3FW8Mma0TrA5LIW"
 }
 data = {
     "notification": {
@@ -16,8 +21,10 @@ data = {
     },
 }
 
-
 def notify_all():
+    '''
+    doc string
+    '''
     engine = create_engine('sqlite:///notifications.db')
     session = orm.sessionmaker(bind=engine)()
 

@@ -1,13 +1,14 @@
 // Initialize Firebase
 const config = {
-  apiKey: "your-api-key-goes-here",
+  apiKey: "AIzaSyCxZash57TFpgnRwZIOBeyiiaFSWdUe5_4",
   authDomain: "python-april-2019.firebaseapp.com",
   databaseURL: "https://python-april-2019.firebaseio.com",
   projectId: "python-april-2019",
   storageBucket: "python-april-2019.appspot.com",
-  messagingSenderId: "your-message-sender-id-goes-here"
+  messagingSenderId: "136461726751"
 };
 firebase.initializeApp(config);
+
 
 // Retrieve Firebase Messaging object.
 const messaging = firebase.messaging();
