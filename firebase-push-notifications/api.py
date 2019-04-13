@@ -1,4 +1,4 @@
-''' 
+'''
 Module string
 '''
 
@@ -20,7 +20,7 @@ def save_token():
         db.session.add(user)
         db.session.commit()
 
-    except SQLAlchemiyError:
+    except SQLAlchemyError:
         return jsonify({'error': SQLAlchemyError.__name__})
 
     return jsonify({'tokeni': token})
