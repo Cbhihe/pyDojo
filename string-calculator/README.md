@@ -1,4 +1,4 @@
-Kata String Calculator
+String Calculator
 ======================
 
 Introducción
