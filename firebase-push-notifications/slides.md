@@ -1,13 +1,11 @@
 ## Tutorial
 PyBCN April 2019 practice session by Ricardo Martinez [@lordrip](http://twitter.com/lordrip)
 
-<span>
-**Topics**:
+### Topics
 <ul>
    <li>pythonanywhere.com</li>
    <li>firebase push notifications</li>
 </ul>
-</span>
 
 ---
 
