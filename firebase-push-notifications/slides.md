@@ -1,24 +1,24 @@
 ## Tutorial
-(PyBCN April 2019 practice session by Ricardo Martinez)
+PyBCN April 2019 practice session by Ricardo Martinez [@lordrip](http://twitter.com/lordrip)
 
-<small>Ricardo Martinez [@lordrip](http://twitter.com/lordrip)</small>
-
-<span>Topics: pythonanywhere.com & firebase push notifications</span>
+<span>
+**Topics**:
+<ul>
+   <li>pythonanywhere.com</li>
+   <li>firebase push notifications</li>
+</ul>
+</span>
 
 ---
 
 ### What is firebase?
 
-<p>Firebase is set of cloud based services that Google offers with a free tier for testing and personal projects</p>
-<p>This tutorial is about one of those services: Firebase Messaging. It is a service that allows us to send and receive push notifications on mobiles and web</p>
-
+<p>Firebase is set of cloud based services, offered by Google with a free tier program for testing small personal projects. This tutorial focuses on one of those services: Firebase Messaging. It allows sending and receiving push notifications on mobiles and web pages.</p>
 --
 
 ### What is pythonanywhere.com?
 
-<p>pythonanywhere.com is a service that allows us to use python in the cloud. The scope of this service ranges from bash and python terminals, web applications with Django, Flask and more, an instance of MySQL to save data and also allows you to specify tasks that will be executed at certain times.</p>
-<p>They also have a free tier program that admits small personal projects.</p>
-
+<p>pythonanywhere.com is a Python cloud service. The scope of this service includes Bash and Python terminals, Django web apps, Flask, MySQL to save data and a `cron` facility to specify tasks to be executed at specific times. The service has a free tier program that admits small personal projects.</p>
 ---
 
 ### Tutorial build objective
@@ -31,7 +31,7 @@
 </ul>
 ---
 
-### Basic requirements
+### Tutorial basic requirements
 
 <ul>
   <li>Flask app</li>
@@ -42,7 +42,7 @@
 
 ---
 
-### Flask app
+### Flask app functionality and code
 
 <ul>
   <li>Serve static code (firebase.js, service worker and templates)</li>
@@ -51,7 +51,7 @@
 
 --
 
-## Simple Flask app
+#### Simple Flask app
 
 <pre><code class="hljs python">
 from flask import Flask
@@ -67,7 +67,7 @@ app.run()
 
 --
 
-## Render a template
+#### Render a template
 
 <pre><code class="hljs python">
 from flask import Flask, render_template
@@ -83,7 +83,7 @@ app.run()
 
 --
 
-## Using Blueprints
+#### Using Blueprints
 
 <pre><code class="hljs python">
 from flask import Blueprint, render_template
@@ -98,7 +98,7 @@ def index():
 
 ---
 
-### Notifier.py
+### Notifier.py functionality and code
 
 <ul>
   <li>A script that will be triggering push notifications to all users in our database</li>
@@ -106,7 +106,7 @@ def index():
 
 --
 
-## Notifier
+#### Notifier
 
 <pre><code class="hljs python">
 import requests
@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
 ---
 
-### Pythonanywhere
+### Pythonanywhere functionality and code
 
 <ul>
   <li>Serve our web app</li>
