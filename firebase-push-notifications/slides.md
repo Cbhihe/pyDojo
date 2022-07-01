@@ -1,57 +1,37 @@
----
-theme : "black"
-transition: "zoom"
-highlightTheme: "atom-one-dark"
-logoImg: "https://raw.githubusercontent.com/evilz/vscode-reveal/master/images/logo-v2.png"
-slideNumber: true
----
-
-## April PyBCN Practice Sessions
-
-<span>pythonanywhere.com & firebase push notifications</span>
-
+## Tutorial
+(PyBCN April 2019 practice session by Ricardo Martinez)
 
 <small>Ricardo Martinez [@lordrip](http://twitter.com/lordrip)</small>
 
----
-
-## Who am I?
-
-I'm Ricardo Martinez, I'm a front-end developer (WTF?) that loves JS & Python.
-Sharing things keeps a little bit more in touch with the language and the community.
-I'm using python for automate task and craft tooling for myself (like the stress-loader for servers)
+<span>Topics: pythonanywhere.com & firebase push notifications</span>
 
 ---
-
-### First things first
-
---
 
 ### What is firebase?
 
 <p>Firebase is set of cloud based services that Google offers with a free tier for testing and personal projects</p>
-<p>Today we'll try one of those services, Firebase Messaging. It is a service that allows us to send and receive push notifications on mobiles and web</p>
+<p>This tutorial is about one of those services: Firebase Messaging. It is a service that allows us to send and receive push notifications on mobiles and web</p>
 
 --
 
 ### What is pythonanywhere.com?
 
-<p>pythonanywhere.com is a service that allows us to use python in the cloud; The scope of this service ranges from bash and python terminals, web applications with Django, Flask and more, an instance of MySQL to save data and also allows you to specify tasks that will be executed at certain times.</p>
-<p>Luckily for us, they also have a free level to do personal projects.</p>
+<p>pythonanywhere.com is a service that allows us to use python in the cloud. The scope of this service ranges from bash and python terminals, web applications with Django, Flask and more, an instance of MySQL to save data and also allows you to specify tasks that will be executed at certain times.</p>
+<p>They also have a free tier program that admits small personal projects.</p>
 
 ---
 
-### What are we gonna build?
+### Tutorial build objective
 
-<iframe src="https://giphy.com/embed/32aOlpp5lG9AyjDBWl" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
---
-
-<p>Lets build a simple app with Flask that will receive a web token and store it in a sqlite database and later send push notifications</p>
-
+<p>Build a simple app with Flask. The app will do three things:</p>
+<ul>
+   <li>receive a web token</li>
+   <li>store it in a sqlite database3cw,</li>
+   <li>subsequently send a push notifications</li>
+</ul>
 ---
 
-### What are we gonna need?
+### Basic requirements
 
 <ul>
   <li>Flask app</li>
