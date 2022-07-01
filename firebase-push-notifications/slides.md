@@ -23,11 +23,11 @@
 
 ### Tutorial build objective
 
-<p>Build a simple app with Flask. The app will do three things:</p>
+<p>Build a simple app with Flask. The app does three things:</p>
 <ul>
    <li>receive a web token</li>
    <li>store it in a sqlite database3cw,</li>
-   <li>subsequently send a push notifications</li>
+   <li>subsequently send a push notification</li>
 </ul>
 ---
 
